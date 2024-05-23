@@ -13,6 +13,9 @@
     <Filter Include="Assets\Shaders">
       <UniqueIdentifier>{8b0cb0c9-e0d8-4107-91c8-11654fac88e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RT">
+      <UniqueIdentifier>{e4203783-8d9a-42a6-a920-f6e39af1e5ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -29,6 +32,24 @@
     </ClInclude>
     <ClInclude Include="Win32Application.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\DXRHelper.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\nv_helpers_dx12\BottomLevelASGenerator.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\nv_helpers_dx12\RaytracingPipelineGenerator.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\nv_helpers_dx12\RootSignatureGenerator.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\nv_helpers_dx12\ShaderBindingTableGenerator.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="rt\nv_helpers_dx12\TopLevelASGenerator.h">
+      <Filter>RT</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +68,21 @@
     <ClCompile Include="Win32Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rt\nv_helpers_dx12\BottomLevelASGenerator.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\nv_helpers_dx12\RaytracingPipelineGenerator.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\nv_helpers_dx12\RootSignatureGenerator.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\nv_helpers_dx12\ShaderBindingTableGenerator.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
+    <ClCompile Include="rt\nv_helpers_dx12\TopLevelASGenerator.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="shaders.hlsl">
@@ -55,5 +91,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="rt\Common.hlsl">
+      <Filter>RT</Filter>
+    </FxCompile>
+    <FxCompile Include="rt\Hit.hlsl">
+      <Filter>RT</Filter>
+    </FxCompile>
+    <FxCompile Include="rt\Miss.hlsl">
+      <Filter>RT</Filter>
+    </FxCompile>
+    <FxCompile Include="rt\RayGen.hlsl">
+      <Filter>RT</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
